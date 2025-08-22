@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Quarterly Earnings Report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <section>
+                <h2>Quarterly Earnings Report: Q3 2025</h2>
+                <p>A Presentation for Stakeholders</p>
+                <br>
+                <p><em>Technical Consultant</em></p>
+                <p><a href="mailto:23f3003400@ds.study.iitm.ac.in">23f3003400@ds.study.iitm.ac.in</a></p>
+            </section>
+
+            <section data-markdown>
+                <textarea data-template>
+                    ## Q3 Financial Highlights
+                    - <p class="fragment">Revenue Growth: **+15%** Year-over-Year</p>
+                    - <p class="fragment">Net Profit Margin: **22%**</p>
+                    - <p class="fragment">Earnings Per Share (EPS): **$2.50**</p>
+                </textarea>
+            </section>
+
+            <section>
+                <h3>Profit Calculation in Python</h3>
+                <p>Simple function to determine net profit.</p>
+                <pre><code class="python" data-line-numbers="1-3|5-7">
+                    def calculate_net_profit(revenue, expenses):
+                        """Calculates net profit from revenue and expenses."""
+                        return revenue - expenses
+
+                    # Example usage for Q3 ($15M revenue, $11.7M expenses)
+                    q3_profit = calculate_net_profit(15000000, 11700000)
+                    print(f"Q3 Net Profit: ${q3_profit:,}")
+                </code></pre>
+            </section>
+            
+            <section>
+                <h3>Growth Analysis: CAGR Formula</h3>
+                <p>We use the Compound Annual Growth Rate (CAGR) for a smoothed average.</p>
+                <p class="fragment">
+                   \[ CAGR = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{\text{Number of Years}}} - 1 \]
+                </p>
+                <aside class="notes">
+                    Speaker notes: Mention that our 5-year revenue CAGR is a healthy 12.8%, indicating consistent and stable growth, which is a key takeaway for our stakeholders. This outperforms the industry average.
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+
+    <script>
+        // Initialize RevealJS
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
+        });
+    </script>
+</body>
+</html>
